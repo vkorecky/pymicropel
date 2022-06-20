@@ -7,8 +7,8 @@ You can install the library using the command
 pip install pymicropel
 ```
 
-## Deploy to PIP
-PIP repository: [https://pypi.org/project/pymicropel/](https://pypi.org/project/pymicropel/)
+## Deploy to PyPI
+PyPI repository: [https://pypi.org/project/pymicropel/](https://pypi.org/project/pymicropel/)
 
 ```bash
 pip install setuptools

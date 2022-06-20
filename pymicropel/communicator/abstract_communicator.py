@@ -1,5 +1,5 @@
 """Abstract class of communicator."""
-from pymicropel.communicator.tcp_client import TcpClient
+from ..communicator.tcp_client import TcpClient
 
 
 class AbstractCommunicator:

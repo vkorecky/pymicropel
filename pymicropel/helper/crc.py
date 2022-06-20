@@ -1,5 +1,5 @@
 """CRC sum."""
-from pymicropel.helper.convert import int_to_hex
+from ..helper.convert import int_to_hex
 
 
 class CRC:

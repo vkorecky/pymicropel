@@ -1,5 +1,5 @@
 """Test conversions."""
-from pymicropel.helper import convert
+from ...helper import convert
 
 
 def test_int_to_hex():

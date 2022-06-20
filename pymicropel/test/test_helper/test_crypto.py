@@ -1,5 +1,5 @@
 """Test of cryptography."""
-from pymicropel.helper.crypto import Crypto
+from ...helper.crypto import Crypto
 
 
 def test_encrypt_decrypt_test():

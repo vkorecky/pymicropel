@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.9.0'
+VERSION = '1.0.0'
 DESCRIPTION = 'Python library for communication with Micropel PLC.'
 LONG_DESCRIPTION = 'A package that allows to communicate with Micropel PLCs over network.'
 
@@ -21,7 +21,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    install_requires=['pytest', 'typing'],
+    install_requires=[],
     keywords=['python', 'plc', 'tcp_ip', 'communication', 'iot', 'automation'],
     classifiers=[
         "Development Status :: 5 - Production/Stable",

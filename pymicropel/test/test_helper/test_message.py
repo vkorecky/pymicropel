@@ -1,5 +1,5 @@
 """Tests of building and parsing messages for PLCs."""
-from pymicropel.helper.message import Message
+from ...helper.message import Message
 
 
 def test_build_message():

@@ -1,9 +1,7 @@
 """Helper for parsing of messages."""
-from typing import Optional
-
-from pymicropel.helper.convert import int_to_hex
-from pymicropel.helper.crc import CRC
-from pymicropel.helper.exceptions import InvalidMessageError
+from ..helper.convert import int_to_hex
+from ..helper.crc import CRC
+from ..helper.exceptions import InvalidMessageError
 
 
 def _get_cmd_index(message):
@@ -42,7 +40,7 @@ class Message:
         return message.upper()
 
     @staticmethod
-    def get_crc(message: str) -> Optional[str]:
+    def get_crc(message: str) -> str:
         """Return CRC from message."""
         if Message.is_valid_message(message):
             raise InvalidMessageError(message)
@@ -52,7 +50,7 @@ class Message:
         return crc
 
     @staticmethod
-    def get_plc_address(message: str) -> Optional[str]:
+    def get_plc_address(message: str) -> str:
         """Return PLC address from message."""
         plc = None
         if Message.is_valid_message(message):
@@ -63,7 +61,7 @@ class Message:
         return plc
 
     @staticmethod
-    def get_cmd_id(message: str) -> Optional[str]:
+    def get_cmd_id(message: str) -> str:
         """Return CMD ID from message."""
         if Message.is_valid_message(message):
             raise InvalidMessageError(message)
@@ -75,7 +73,7 @@ class Message:
         return cmd_id
 
     @staticmethod
-    def get_data(message: str) -> Optional[str]:
+    def get_data(message: str) -> str:
         """Return DATA from message."""
         if Message.is_valid_message(message):
             raise InvalidMessageError(message)
@@ -89,7 +87,7 @@ class Message:
         return data
 
     @staticmethod
-    def get_cmd_type(message: str) -> Optional[str]:
+    def get_cmd_type(message: str) -> str:
         """Return CMD type from message."""
         if Message.is_valid_message(message):
             raise InvalidMessageError(message)

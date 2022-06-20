@@ -1,5 +1,5 @@
 """Tests of CRC."""
-from pymicropel.helper.crc import CRC
+from ...helper.crc import CRC
 
 
 def test_get_crc():

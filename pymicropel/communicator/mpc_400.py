@@ -1,7 +1,7 @@
 """MPC400 PLC and communicator."""
-from pymicropel.helper.convert import int_to_hex
-from pymicropel.helper.message import Message
-from pymicropel.communicator.abstract_communicator import AbstractCommunicator
+from ..helper.convert import int_to_hex
+from ..helper.message import Message
+from ..communicator.abstract_communicator import AbstractCommunicator
 
 
 class Mpc400(AbstractCommunicator):

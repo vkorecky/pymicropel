@@ -2,11 +2,10 @@
 import logging
 import socket
 import threading
-from typing import Optional
 
-from pymicropel.helper.crypto import Crypto
-from pymicropel.helper.exceptions import ExceptionResponse, MicropelException
-from pymicropel.helper.message import Message
+from ..helper.crypto import Crypto
+from ..helper.exceptions import ExceptionResponse, MicropelException
+from ..helper.message import Message
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -37,7 +36,7 @@ class TcpClient:
             self._connected = False
             _LOGGER.error("Cannot connect to %s port %s: %s", self._host, self._port, e)
 
-    def send_and_receive(self, message: str) -> Optional[str]:
+    def send_and_receive(self, message: str) -> str:
         """Send and receive data from server."""
         with self._lock:
             try:
